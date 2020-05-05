@@ -1,0 +1,73 @@
+const spinner = (() => {
+  let spinDelay = 100;
+  let animation = ['\r|   ', '\r/   ', '\r-   ', '\r\\   ', '\r|   ', '\r/   ', '\r-   ', '\r\\   ', '\r|   '];
+  while (spinDelay < 1750) {
+    for (let frame of animation) {
+      setTimeout(() => {
+        process.stdout.write(frame);
+      }, spinDelay);
+      spinDelay += 200;
+    }
+  }
+});
+
+spinner();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// setTimeout(() => {
+//   process.stdout.write('\r|   ');
+// }, 100);
+
+// setTimeout(() => {
+//   process.stdout.write('\r/   ');
+// }, 300);
+
+// setTimeout(() => {
+//   process.stdout.write('\r-   ');
+// }, 500);
+
+// setTimeout(() => {
+//   process.stdout.write('\r\\   ');
+// }, 700);
+// setTimeout(() => {
+//   process.stdout.write('\r|   ');
+// }, 900);
+
+// setTimeout(() => {
+//   process.stdout.write('\r/   ');
+// }, 1100);
+
+// setTimeout(() => {
+//   process.stdout.write('\r-   ');
+// }, 1300);
+
+// setTimeout(() => {
+//   process.stdout.write('\r\\   ');
+// }, 1500);
+
+// setTimeout(() => {
+//   process.stdout.write('\r|  ');
+// }, 1700);
+
+// setTimeout(() => {
+//   process.stdout.write('\n');
+// }, 1701);
